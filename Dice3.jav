@@ -15,7 +15,7 @@ public class Dice3 {
     }
 
     public int nextRoll( ) {
-      return randGen.nextInt(6) +1;
+      return randGen.nextInt(5) +1;
     }
     
   public void tester (int howMany) {
