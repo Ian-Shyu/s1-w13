@@ -11,7 +11,11 @@ public class StPeters
     }
     
     public void optimizeEntryFee(){
-        //
+        //your code here -- after you write and test runGame() and flip()
+        for(double x = 1; x<6; x+=0.01){
+            this.entryFee = x;
+            tester(10000);
+        }
     }
     
     public void tester(int howMany){
