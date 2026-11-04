@@ -10,22 +10,17 @@ public class Generator {
       bars = new BarChart12();
    }
 
-   
    public int generator1( ) {
-      // You supply this code.
-      return 0;
+      return randGen.nextInt(6) + 1;
    }
     
-   
    public int generator2( ) {
-      // You supply this code.
-      return 0;
+      return randGen.nextInt(6) + 1 + randGen.nextInt(6) + 1;
    }
-   
    
    public int generator3( ) {
       // You supply this code.
-      return 0;
+      return randGen.nextInt(12) + 1;
    }
    
    
