@@ -54,7 +54,6 @@ public class Dice4 {
         System.out.println(count + " one 6 in 4 rolls tried " + howMany + " times : " + count * 1.0 / howMany);;
     }
     
-    
     private boolean takeATurnA12In24Rolls(){
     	int counter = 0;
         while(counter < 24)
