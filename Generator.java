@@ -10,13 +10,18 @@ public class Generator {
       bars = new BarChart12();
    }
 
+   
    public int generator1( ) {
+      // You supply this code.
       return randGen.nextInt(6) + 1;
    }
     
+   
    public int generator2( ) {
+      // You supply this code.
       return randGen.nextInt(6) + 1 + randGen.nextInt(6) + 1;
    }
+   
    
    public int generator3( ) {
       // You supply this code.
@@ -24,9 +29,13 @@ public class Generator {
    }
    
    
-   public int generator4( ) {
+   public int generator4(int a) {
       // You supply this code.
-      return 0;
+      int b = randGen.nextInt(6) + 1;
+      while (b==a){
+         b = randGen.nextInt(6) + 1;
+      }
+      return b;
    }
    
    
@@ -42,7 +51,7 @@ public class Generator {
          } else if (whichTest == 3) {
             bars.add(generator3( ));
          } else if (whichTest == 4) {
-            bars.add(generator4( ));
+            bars.add(generator4(2));
          } else {
             System.out.println("I don't have such a test!");
             break;
@@ -52,5 +61,6 @@ public class Generator {
       bars.updateUI();     // tells the bar chart to update its picture
    }
 
+   
    
 }
